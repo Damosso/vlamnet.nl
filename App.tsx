@@ -496,23 +496,15 @@ const GamingPCGraphic = () => {
 // --- COMPONENTS ---
 
 const VlamNetLogo: React.FC<{ className?: string; textClassName?: string }> = ({ className = "", textClassName = "" }) => {
-  const [imgError, setImgError] = useState(false);
-  const LOGO_SRC = "logo.png";
-
   return (
     <div className={`flex items-center gap-3 font-bold text-2xl tracking-tight ${className}`}>
       <div className="relative group">
         <div className="absolute inset-0 blur-lg bg-vlam-orange/20 rounded-full opacity-60 group-hover:opacity-80 transition-opacity"></div>
-        {imgError ? (
-          <Flame className="w-10 h-10 text-vlam-orange fill-vlam-orange relative z-10" />
-        ) : (
-          <img 
-            src={LOGO_SRC} 
-            alt="VlamNet Logo" 
-            onError={() => setImgError(true)}
-            className="w-12 h-12 object-contain relative z-10 drop-shadow-md transition-transform group-hover:scale-110 duration-300" 
-          />
-        )}
+        <img 
+          src="/images/logo.png" 
+          alt="VlamNet Logo" 
+          className="w-12 h-12 object-contain relative z-10 drop-shadow-md transition-transform group-hover:scale-110 duration-300" 
+        />
       </div>
       <span className={textClassName || "text-slate-800 dark:text-white"}>
         Vlam<span className="text-vlam-orange">Net</span>
@@ -998,7 +990,7 @@ const ContactPage: React.FC = () => (
              </div>
              <div>
                <h4 className="font-bold text-lg text-slate-900 dark:text-white">Locatie</h4>
-               <p className="text-slate-600 dark:text-slate-300 mt-1">Rotterdam, Nederland</p>
+               <p className="text-slate-600 dark:text-slate-300 mt-1">Eindhoven, Nederland</p>
                <p className="text-sm text-slate-500 mt-1">Op afspraak te bezoeken</p>
              </div>
            </div>
