@@ -990,7 +990,7 @@ const ContactPage: React.FC = () => (
              </div>
              <div>
                <h4 className="font-bold text-lg text-slate-900 dark:text-white">Locatie</h4>
-               <p className="text-slate-600 dark:text-slate-300 mt-1">Eindhoven, Nederland</p>
+               <p className="text-slate-600 dark:text-slate-300 mt-1">Rotterdam, Nederland</p>
                <p className="text-sm text-slate-500 mt-1">Op afspraak te bezoeken</p>
              </div>
            </div>
