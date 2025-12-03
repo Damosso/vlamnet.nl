@@ -42,5 +42,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/Damosso/vlamnet.nl:${{ github.sha }}
-            ghcr.io/Damosso/vlamnet.nl:latest
+            ghcr.io/damosso/vlamnet.nl:${{ github.sha }}
+            ghcr.io/damosso/vlamnet.nl:latest
