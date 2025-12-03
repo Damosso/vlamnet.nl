@@ -501,11 +501,11 @@ const VlamNetLogo: React.FC<{ className?: string; textClassName?: string }> = ({
     <div className={`flex items-center gap-3 font-bold text-2xl tracking-tight ${className}`}>
       <div className="relative group">
         <div className="absolute inset-0 blur-lg bg-vlam-orange/20 rounded-full opacity-60 group-hover:opacity-80 transition-opacity"></div>
-        <img 
-          src="/images/logo.png" 
-          alt="VlamNet Logo" 
-          className="w-12 h-12 object-contain relative z-10 drop-shadow-md transition-transform group-hover:scale-110 duration-300" 
-        />
+          <img
+            src={logo}
+            alt="VlamNet Logo"
+            className="w-12 h-12 object-contain relative z-10 drop-shadow-md transition-transform group-hover:scale-110 duration-300"
+          />
       </div>
       <span className={textClassName || "text-slate-800 dark:text-white"}>
         Vlam<span className="text-vlam-orange">Net</span>
