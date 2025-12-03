@@ -950,7 +950,7 @@ const ContactPage: React.FC = () => (
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <GlassCard className="space-y-8">
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Stuur een bericht</h3>
+        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Stuur een bericht (gebruik mail. form werkt nog niet.)</h3>
         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -991,7 +991,7 @@ const ContactPage: React.FC = () => (
              </div>
              <div>
                <h4 className="font-bold text-lg text-slate-900 dark:text-white">Locatie</h4>
-               <p className="text-slate-600 dark:text-slate-300 mt-1">Rotterdam, Nederland</p>
+               <p className="text-slate-600 dark:text-slate-300 mt-1">Eindhoven, Nederland</p>
                <p className="text-sm text-slate-500 mt-1">Op afspraak te bezoeken</p>
              </div>
            </div>
